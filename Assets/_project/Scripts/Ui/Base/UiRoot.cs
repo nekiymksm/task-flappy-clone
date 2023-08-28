@@ -44,6 +44,10 @@ namespace _project.Scripts.Ui.Base
                     break;
                 case GameAction.GameEnd:
                     GetUiElement<PointsValueView>().Hide();
+                    GetUiElement<ConversionDataView>().Show();
+                    break;
+                case GameAction.GameStart:
+                    GetUiElement<ConversionDataView>().Hide();
                     break;
             }
         }
