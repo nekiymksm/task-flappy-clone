@@ -74,6 +74,7 @@ namespace _project.Scripts.Ui
         private void OnSettingsButtonClick()
         {
             _settingsMenu.Show();
+            UiRoot.GetUiElement<ConversionDataView>().Hide();
             
             _gameObserver.Notify(GameAction.ButtonPressed);
         }

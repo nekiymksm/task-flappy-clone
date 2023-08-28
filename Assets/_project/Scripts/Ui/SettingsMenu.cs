@@ -87,6 +87,7 @@ namespace _project.Scripts.Ui
         private void OnExitButtonClick()
         {
             Hide();
+            UiRoot.GetUiElement<ConversionDataView>().Show();
 
             var saveData = _saveManager.SaveData;
             saveData.difficultyLevel = _currentDifficultyCounter;
